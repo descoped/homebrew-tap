@@ -6,12 +6,12 @@
 class Dddns < Formula
   desc "Lightweight Dynamic DNS client with multi-provider support"
   homepage "https://github.com/descoped/dddns"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   if Hardware::CPU.intel?
-    url "https://github.com/descoped/dddns/releases/download/v0.3.0/dddns_Darwin_x86_64.tar.gz"
-    sha256 "2ab27d8b147ef2a5805c1605d8473401842d098671d2130c54679029bb872859"
+    url "https://github.com/descoped/dddns/releases/download/v0.3.1/dddns_Darwin_x86_64.tar.gz"
+    sha256 "d482163c0817ceda785689f46e9bb9d8e8b29e29c0c279e4814a98108b23b843"
 
     def install
       bin.install "dddns"
@@ -19,8 +19,8 @@ class Dddns < Formula
   end
 
   if Hardware::CPU.arm?
-    url "https://github.com/descoped/dddns/releases/download/v0.3.0/dddns_Darwin_arm64.tar.gz"
-    sha256 "9f8085cd05f100e8f3f385d111ac53d3b5d341229e2fb2609327cebf19914b23"
+    url "https://github.com/descoped/dddns/releases/download/v0.3.1/dddns_Darwin_arm64.tar.gz"
+    sha256 "0c95d2759f11288b45293f71504f998d4c6a56c0ef30aacc7190f769f14fa827"
 
     def install
       bin.install "dddns"
